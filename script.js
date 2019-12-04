@@ -2,8 +2,8 @@
 
 
 var labelWidth=0;
-var label=['       Taiwan        ','China','United States','Other Asia Pacific'];
-var label2=['2171','1894','589','1983'];
+// var label=['Taiwan','China','United States','Other Asia Pacific'];
+// var label2=['2171','1894','589','1983'];
 var width = 600
 height = 300
 const data = [{       
@@ -27,7 +27,7 @@ const data = [{
         "revenue": 1983
       }
     ];
-
+const formatrevenue = d3.format("$,");
     const colors = ["#BF046B","#D96C89",  "#CFCFCF","#CA5D9C"];
     scaleColor = d3.scaleOrdinal()
       .domain(data.map(d => d.country))
@@ -52,30 +52,29 @@ const data = [{
       .key(d => d.country)
       .entries(boxes)
 
+console.log(nest)
 
     const graph = d3.select(".chart");
-    const group = graph
-      .selectAll(".container")
+
+    const parentGroup = graph
+      .selectAll(".parent-container")
       .data(nest)
       .join("div")
+      .attr("class", "parent-container");
+
+    parentGroup
+      .selectAll(".group-revenue")
+      .data(d => [d])
+      .join("p")
+      .text(d => formatrevenue(d.values[0].revenue))
+      .attr("class", "group-revenue")
+      
+
+    const group = parentGroup
+      .selectAll(".container")
+      .data(d => [d])
+      .join("div")
       .attr("class", "container");
-
-// // group.selectAll(".group-label")
-// // .data(d => [d])
-// // .join("p")
-// // .text(d => d.key)
-// // .attr("class", "group-label")
-
-// // var x = d3.scaleLinear()
-// //   .domain([0, d3.max(data)])
-// //   .range([0, 200]);
-
-//     // const labeltry=d3.select(".chart")
-//     // labeltry.selectAll(".container")
-//     // .append("text")
-//     //       .attr("class","label")
-//     //       .text(function(d, i) { return label[i]; })
- 
 
     group
       .selectAll(".box")
@@ -83,6 +82,13 @@ const data = [{
       .join("div")
       .attr("class", "box")
       .style("background-color", d => scaleColor(d.country));
+
+    parentGroup
+      .selectAll(".group-country")
+      .data(d => [d])
+      .join("p")
+      .text(d => d.key)
+      .attr("class", "group-country")
 
    
     // graph.selectAll(".container")

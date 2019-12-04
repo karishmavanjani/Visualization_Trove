@@ -102,7 +102,7 @@ line-height: 7px;
 /*  margin-left: 40px;
   margin-right: 40px; */
   margin: auto;
-  width: 620px;
+  width: 600px;
 }
 
 h1
@@ -127,69 +127,42 @@ h2
 /*    color:#6C757F;*/
       margin-top: 20px;
 }
+
+.parent-container {
+  width: 23%;
+}
 .container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
   margin: 7px;
-  width: 200px;
   height: 150px;
   justify-content: flex-start;
   align-content: flex-start;
   background-color: #ffffff;
 }
-.a { 
+.group-revenue { 
 
 font-size: 15px;
 font-style: bold;
    color:grey;
-  text-align: left;
-  padding-left: 467px;
-margin-bottom: 5px;
+  text-align: center;  
+/*  padding-left: 45px;*/
+margin-bottom: 25px;
 
   /*padding-bottom: 300px;*/
 }
-.b { 
 
-font-size: 15px;
-font-style: bold;
-   color:grey;
-  margin-top: -20px;
-  text-align: left;
-  padding-left: 620px;
-  /*padding-bottom: 300px;*/
-}
-.c
+
+.group-country
 {
 
 font-size: 15px;
 font-style: bold;
    color:grey;
- margin-top: -18px;
-text-align: left;
-  padding-left: 760px;
-}
-.d
-{
-
-font-size: 15px;
-font-style: bold;
-   color:grey;
- margin-top: -18px;
-text-align: right;
-  padding-right: 427px;
-/*    padding-top: -40px;*/
-}
-
-
-.c1
-{
-
-font-size: 15px;
-font-style: bold;
-   color:grey;
- margin-top: -18px;
-text-align: left;
-  padding-left: 780px;
+/* margin-top: -18px;*/
+text-align: center;
+/*  padding-left: 45px;*/
 }
 .d1
 {
