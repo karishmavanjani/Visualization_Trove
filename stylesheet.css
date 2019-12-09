@@ -1,66 +1,67 @@
 body {
-  margin: 0;
-  /*max-width: 600px;*/
+    margin: 0;
+    /*max-width: 600px;*/
 }
 
 
 
 
 
-.subtitle
-{
+.subtitle {
 
 
-  font-size: 15px;
-   text-align: left;
-  font-style: italic;
-    color:#6C757F;
-      margin-top: 20px;
-line-height: 7px;
+    font-size: 15px;
+    text-align: left;
+    font-style: italic;
+    color: #6C757F;
+    margin-top: 20px;
+    line-height: 7px;
 
-  max-width: 600px;
+    max-width: 600px;
     margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
- 
+    margin-right: auto;
+    margin-bottom: 20px;
+
 }
 
 .copy {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  font-size: 18px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 18px;
 
 }
 
 .active {
-  opacity: 1;
-  transition: opacity 1s;
+    opacity: 1;
+    transition: opacity 10s;
 }
 
 .inactive {
-  opacity: 0;
-  transition: opacity 1s;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .scroller {
-  width: 100%;
-  margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .scroll-graphic {
-  position: sticky;
-  top: 0;
-  height: 100vh;
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
 
 .photo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
 }
+
 /*.img
 { 
   max-width: 600px;
@@ -73,111 +74,110 @@ line-height: 7px;
 
 
 .photo img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .scroll-scenes {
-  position: relative;
-  padding-top: 50vh;
+    position: relative;
+    padding-top: 50vh;
 }
 
 .scene {
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
-  max-width: 500px;
-  margin: auto;
-  margin-bottom: 100vh;
-  padding: 15px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 100vh;
+    padding: 15px;
 }
 
 .after {
-  height: 1px;
+    height: 1px;
 }
 
 .chart {
-  display:flex;
-/*  margin-left: 40px;
+    display: flex;
+    /*  margin-left: 40px;
   margin-right: 40px; */
-  margin: auto;
-  width: 600px;
+    margin: auto;
+    width: 600px;
 }
 
-h1
-{
-  font-size: 22px;
+h1 {
+    font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
     text-align: left;
-  max-width: 600px;
+    max-width: 600px;
     margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
-h2
-{
-  font-size: 18px;
+h2 {
+    font-size: 18px;
     margin-bottom: 15px;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
-/*    color:#6C757F;*/
-      margin-top: 20px;
+    /*    color:#6C757F;*/
+    margin-top: 20px;
 }
 
 .parent-container {
-  width: 23%;
+    width: 23%;
 }
+
 .container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  margin: 7px;
-  height: 150px;
-  justify-content: flex-start;
-  align-content: flex-start;
-  background-color: #ffffff;
-}
-.group-revenue { 
-
-font-size: 15px;
-font-style: bold;
-   color:grey;
-  text-align: center;  
-/*  padding-left: 45px;*/
-margin-bottom: 25px;
-
-  /*padding-bottom: 300px;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 7px;
+    height: 150px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: #ffffff;
 }
 
+.group-revenue {
 
-.group-country
-{
+    font-size: 15px;
+    font-style: bold;
+    color: grey;
+    text-align: center;
+    /*  padding-left: 45px;*/
+    margin-bottom: 25px;
 
-font-size: 15px;
-font-style: bold;
-   color:grey;
-/* margin-top: -18px;*/
-text-align: center;
-/*  padding-left: 45px;*/
+    /*padding-bottom: 300px;*/
 }
-.d1
-{
 
-font-size: 15px;
-font-style: bold;
-   color:grey;
- margin-top: -18px;
-text-align: right;
-  padding-right: 475px;
-/*    padding-top: -40px;*/
+
+.group-country {
+
+    font-size: 15px;
+    font-style: bold;
+    color: grey;
+    /* margin-top: -18px;*/
+    text-align: center;
+    /*  padding-left: 45px;*/
 }
-.text
-{
-  font-size: 80px;
+
+.d1 {
+
+    font-size: 15px;
+    font-style: bold;
+    color: grey;
+    margin-top: -18px;
+    text-align: right;
+    padding-right: 475px;
+    /*    padding-top: -40px;*/
+}
+
+.text {
+    font-size: 80px;
     margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
@@ -185,35 +185,32 @@ text-align: right;
 
 /* the pink boxes we will transition */
 .box {
-/*  padding:10px;*/
-  width: 10px;
-  height: 10px;
-  margin: 2px;
-  z-index: 0;
-  background-color: #FF7373;
-  position: relative;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  border-radius: 1px; 
-  transform: scale(0);
+    /*  padding:10px;*/
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    z-index: 0;
+    background-color: #FF7373;
+    position: relative;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    transform: scale(0);
 }
 
-.e
-
-{
+.e {
 
 
-  font-size: 12px;
-   text-align: center;
-  font-style: italic;
-    color:#6C757F;
-     /* margin-top: 20px;*/
-/*line-height: 1px;*/
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    color: #6C757F;
+    /* margin-top: 20px;*/
+    /*line-height: 1px;*/
 
-  max-width: 600px;
+    max-width: 600px;
     margin-left: auto;
-  margin-right: auto;
-/*  margin-bottom: 20px;*/
- 
-}
+    margin-right: auto;
+    /*  margin-bottom: 20px;*/
 
+}

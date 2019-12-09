@@ -9,22 +9,22 @@ height = 300
 const data = [{
         "country": "Taiwan",
         "boxes": 108,
-        "revenue": 2171
+        "revenue": 2.17
     },
     {
         "country": "China",
         "boxes": 95,
-        "revenue": 1894
+        "revenue": 1.85
     },
     {
         "country": "United States",
         "boxes": 30,
-        "revenue": 589
+        "revenue": 0.55
     },
     {
         "country": "Other Asia Pacific",
         "boxes": 99,
-        "revenue": 1983
+        "revenue": 1.98
     }
 ];
 const formatrevenue = d3.format("$,");
